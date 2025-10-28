@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 처리방침 / Privacy Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+            color: #1f2937; /* Gray-800 */
+        }
+        .section-title {
+            color: #10b981; /* Emerald-500 */
+            border-bottom: 2px solid #a7f3d0; /* Emerald-200 */
+        }
+        .subsection-title {
+            color: #059669; /* Emerald-600 */
+        }
+        .language-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-4 sm:p-10">
+
+    <!-- Language Switch Button -->
+    <div class="language-switch">
+        <button id="langSwitch" onclick="toggleLanguage()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-lg transition-colors duration-200">
+            한국어
+        </button>
+    </div>
+
+    <!-- Korean Version -->
+    <div id="koreanVersion" class="max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl border border-gray-200 hidden">
+        
+        <header class="mb-8 border-b pb-4">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">개인정보 처리방침</h1>
+            <p class="text-gray-500">
+                Yonge Lab.는 「개인정보 보호법」 제30조에 따라 정보주체의 개인정보를 보호하고 이와 관련된 고충을 신속하고 원활하게 처리할 수 있도록 다음과 같이 개인정보 처리방침을 수립·공개합니다.
+            </p>
+            <p class="text-sm text-gray-500 mt-2">
+                최초 제정일: 2024년 12월 19일<br>
+                최종 개정일: 2024년 12월 19일
+            </p>
+        </header>
+
+        <!-- 1. 개인정보의 처리 목적 -->
+        <section class="mb-8">
+            <h2 id="purpose" class="section-title text-xl font-bold pb-2 mb-4">1. 개인정보의 처리 목적</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab.는 다음의 목적을 위하여 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 「개인정보 보호법」 제18조에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>게임 서비스 제공 및 운영</li>
+                <li>앱 사용 통계 및 성능 분석 (익명화된 데이터)</li>
+                <li>고충 처리 및 민원 처리</li>
+                <li>서비스 개선 및 신기능 개발</li>
+            </ul>
+        </section>
+
+        <!-- 2. 개인정보의 처리 및 보유 기간 -->
+        <section class="mb-8">
+            <h2 id="retention" class="section-title text-xl font-bold pb-2 mb-4">2. 개인정보의 처리 및 보유 기간</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab.는 법령에 따른 개인정보 보유·이용 기간 또는 정보주체로부터 개인정보를 수집 시에 동의 받은 개인정보 보유·이용 기간 내에서 개인정보를 처리 및 보유합니다.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>**앱 사용 통계**: 익명화된 데이터로 1년간 보관</li>
+                <li>**오류 로그**: 앱 개선을 위해 6개월간 보관</li>
+                <li>**고객 문의**: 문의 처리 완료 후 1년간 보관</li>
+            </ul>
+        </section>
+
+        <!-- 3. 정보주체와 법정대리인의 권리·의무 및 행사 방법 -->
+        <section class="mb-8">
+            <h2 id="rights" class="section-title text-xl font-bold pb-2 mb-4">3. 정보주체와 법정대리인의 권리·의무 및 행사 방법</h2>
+            <p class="text-gray-700 mb-4">
+                정보주체(만 14세 미만 아동의 경우 법정대리인)는 Yonge Lab.에 대해 언제든지 다음 각 호의 개인정보 보호 관련 권리를 행사할 수 있습니다.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>개인정보 열람 요구</li>
+                <li>오류 등이 있을 경우 정정·삭제 요구</li>
+                <li>처리 정지 요구</li>
+            </ul>
+            <p class="mt-4 text-gray-700">
+                권리 행사는 Yonge Lab.에 대해 서면, 전화, 전자우편, 모사전송(FAX) 등을 통하여 할 수 있으며, Yonge Lab.는 이에 대해 지체 없이 조치하겠습니다.
+            </p>
+        </section>
+
+        <!-- 4. 처리하는 개인정보 항목 -->
+        <section class="mb-8">
+            <h2 id="items" class="section-title text-xl font-bold pb-2 mb-4">4. 처리하는 개인정보 항목</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab.는 다음의 개인정보 항목을 처리하고 있습니다.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>**앱 사용 통계**: 게임 플레이 횟수, 기능 사용 빈도 (익명화)</li>
+                <li>**오류 로그**: 앱 크래시 정보, 성능 데이터 (익명화)</li>
+                <li>**고객 문의**: 문의 내용, 연락처 (문의 시에만)</li>
+                <li>**기기 정보**: OS 버전, 앱 버전 (익명화)</li>
+            </ul>
+        </section>
+        
+        <!-- 5. 개인정보의 파기 절차 및 방법 -->
+        <section class="mb-8">
+            <h2 id="disposal" class="section-title text-xl font-bold pb-2 mb-4">5. 개인정보의 파기 절차 및 방법</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab.는 개인정보 보유기간의 경과, 처리 목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.
+            </p>
+            <p class="subsection-title font-semibold mt-4">파기 절차</p>
+            <p class="text-gray-700">
+                이용자가 입력한 정보는 목적 달성 후 별도의 DB에 옮겨져(종이의 경우 별도의 서류함) 내부 방침 및 기타 관련 법령에 따라 일정 기간 저장된 후 혹은 즉시 파기됩니다. 이 때, DB로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.
+            </p>
+            <p class="subsection-title font-semibold mt-4">파기 방법</p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>**전자적 파일 형태**: 복구 및 재생되지 않도록 영구 삭제</li>
+                <li>**기록물, 인쇄물, 서면, 그 밖의 기록매체**: 파쇄 또는 소각</li>
+            </ul>
+        </section>
+
+        <!-- 6. 개인정보 보호 책임자 -->
+        <section class="mb-8">
+            <h2 id="contact" class="section-title text-xl font-bold pb-2 mb-4">6. 개인정보 보호 책임자</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab.는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및 피해 구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
+            </p>
+            <div class="bg-gray-100 p-4 rounded-lg border border-gray-300 space-y-2 text-gray-700">
+                <p><span class="font-semibold">성명</span>: Yonge</p>
+                <p><span class="font-semibold">직책</span>: Developer</p>
+                <p><span class="font-semibold">연락처</span>: yong.i@hotmail.com</p>
+            </div>
+        </section>
+
+        <!-- 7. 개인정보 처리방침 변경에 관한 사항 -->
+        <section class="mb-8">
+            <h2 id="changes" class="section-title text-xl font-bold pb-2 mb-4">7. 개인정보 처리방침 변경에 관한 사항</h2>
+            <p class="text-gray-700">
+                이 개인정보 처리방침은 2024년 12월 19일부터 적용됩니다. 법령 및 방침에 따른 내용 추가, 삭제 및 정정이 있는 경우에는 개정 최소 7일 전에 공지사항을 통하여 고지할 것입니다.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- English Version -->
+    <div id="englishVersion" class="max-w-4xl mx-auto bg-white p-6 sm:p-10 rounded-xl shadow-2xl border border-gray-200">
+        
+        <header class="mb-8 border-b pb-4">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-2">Privacy Policy</h1>
+            <p class="text-gray-500">
+                Yonge Lab. establishes and discloses the following privacy policy in accordance with Article 30 of the Personal Information Protection Act to protect personal information of data subjects and promptly and smoothly handle complaints related thereto.
+            </p>
+            <p class="text-sm text-gray-500 mt-2">
+                First enacted: December 19, 2024<br>
+                Last revised: December 19, 2024
+            </p>
+        </header>
+
+        <!-- 1. Purpose of Processing Personal Information -->
+        <section class="mb-8">
+            <h2 id="purpose-en" class="section-title text-xl font-bold pb-2 mb-4">1. Purpose of Processing Personal Information</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab. processes personal information for the following purposes. Personal information being processed will not be used for purposes other than the following, and if the purpose of use changes, necessary measures such as obtaining separate consent will be implemented in accordance with Article 18 of the Personal Information Protection Act.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>Providing and operating game services</li>
+                <li>App usage statistics and performance analysis (anonymized data)</li>
+                <li>Handling complaints and civil petitions</li>
+                <li>Service improvement and new feature development</li>
+            </ul>
+        </section>
+
+        <!-- 2. Processing and Retention Period of Personal Information -->
+        <section class="mb-8">
+            <h2 id="retention-en" class="section-title text-xl font-bold pb-2 mb-4">2. Processing and Retention Period of Personal Information</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab. processes and retains personal information within the period of retention and use of personal information according to laws or the period of retention and use of personal information agreed upon when collecting personal information from data subjects.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>**App usage statistics**: Retained for 1 year as anonymized data</li>
+                <li>**Error logs**: Retained for 6 months for app improvement</li>
+                <li>**Customer inquiries**: Retained for 1 year after inquiry processing completion</li>
+            </ul>
+        </section>
+
+        <!-- 3. Rights and Obligations of Data Subjects and Legal Representatives -->
+        <section class="mb-8">
+            <h2 id="rights-en" class="section-title text-xl font-bold pb-2 mb-4">3. Rights and Obligations of Data Subjects and Legal Representatives</h2>
+            <p class="text-gray-700 mb-4">
+                Data subjects (legal representatives in case of children under 14) may exercise the following rights related to personal information protection against Yonge Lab. at any time.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>Request for access to personal information</li>
+                <li>Request for correction or deletion in case of errors</li>
+                <li>Request for suspension of processing</li>
+            </ul>
+            <p class="mt-4 text-gray-700">
+                Rights may be exercised against Yonge Lab. through writing, telephone, email, facsimile transmission (FAX), etc., and Yonge Lab. will take action without delay.
+            </p>
+        </section>
+
+        <!-- 4. Personal Information Items Processed -->
+        <section class="mb-8">
+            <h2 id="items-en" class="section-title text-xl font-bold pb-2 mb-4">4. Personal Information Items Processed</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab. processes the following personal information items.
+            </p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>**App usage statistics**: Game play count, feature usage frequency (anonymized)</li>
+                <li>**Error logs**: App crash information, performance data (anonymized)</li>
+                <li>**Customer inquiries**: Inquiry content, contact information (only when inquiring)</li>
+                <li>**Device information**: OS version, app version (anonymized)</li>
+            </ul>
+        </section>
+        
+        <!-- 5. Procedures and Methods for Destruction of Personal Information -->
+        <section class="mb-8">
+            <h2 id="disposal-en" class="section-title text-xl font-bold pb-2 mb-4">5. Procedures and Methods for Destruction of Personal Information</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab. destroys personal information without delay when personal information becomes unnecessary due to expiration of retention period or achievement of processing purpose.
+            </p>
+            <p class="subsection-title font-semibold mt-4">Destruction Procedure</p>
+            <p class="text-gray-700">
+                Information entered by users is moved to a separate database (or separate documents in case of paper) after achieving the purpose and is stored for a certain period according to internal policies and other related laws, or destroyed immediately. At this time, personal information moved to the database is not used for purposes other than those specified by law.
+            </p>
+            <p class="subsection-title font-semibold mt-4">Destruction Method</p>
+            <ul class="list-disc list-inside space-y-2 pl-4 text-gray-700">
+                <li>**Electronic file format**: Permanent deletion so that it cannot be recovered or regenerated</li>
+                <li>**Records, printed materials, documents, and other recording media**: Shredding or incineration</li>
+            </ul>
+        </section>
+
+        <!-- 6. Personal Information Protection Officer -->
+        <section class="mb-8">
+            <h2 id="contact-en" class="section-title text-xl font-bold pb-2 mb-4">6. Personal Information Protection Officer</h2>
+            <p class="text-gray-700 mb-4">
+                Yonge Lab. is responsible for overseeing personal information processing tasks and has designated a personal information protection officer as follows to handle complaints and damage relief related to personal information processing.
+            </p>
+            <div class="bg-gray-100 p-4 rounded-lg border border-gray-300 space-y-2 text-gray-700">
+                <p><span class="font-semibold">Name</span>: Yonge</p>
+                <p><span class="font-semibold">Position</span>: Developer</p>
+                <p><span class="font-semibold">Contact</span>: yong.i@hotmail.com</p>
+            </div>
+        </section>
+
+        <!-- 7. Matters Concerning Changes to Privacy Policy -->
+        <section class="mb-8">
+            <h2 id="changes-en" class="section-title text-xl font-bold pb-2 mb-4">7. Matters Concerning Changes to Privacy Policy</h2>
+            <p class="text-gray-700">
+                This privacy policy is effective from December 19, 2024. If there are additions, deletions, or corrections to the content according to laws and policies, we will notify through announcements at least 7 days before the revision.
+            </p>
+        </section>
+
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const koreanVersion = document.getElementById('koreanVersion');
+            const englishVersion = document.getElementById('englishVersion');
+            const langSwitch = document.getElementById('langSwitch');
+            
+            if (koreanVersion.classList.contains('hidden')) {
+                // Switch to Korean
+                koreanVersion.classList.remove('hidden');
+                englishVersion.classList.add('hidden');
+                langSwitch.textContent = 'English';
+                document.documentElement.lang = 'ko';
+            } else {
+                // Switch to English
+                koreanVersion.classList.add('hidden');
+                englishVersion.classList.remove('hidden');
+                langSwitch.textContent = '한국어';
+                document.documentElement.lang = 'en';
+            }
+        }
+    </script>
+</body>
+</html>
