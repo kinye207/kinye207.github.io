@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yonge Lab. - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .language-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .hidden {
+            display: none;
+        }
+        .floating-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Language Switch Button -->
+    <div class="language-switch">
+        <button id="langSwitch" onclick="toggleLanguage()" class="bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-full shadow-lg transition-all duration-300 border border-gray-200">
+            <i class="fas fa-globe mr-2"></i>
+            <span id="langText">한국어</span>
+        </button>
+    </div>
+
+    <!-- English Version -->
+    <div id="englishVersion">
+        <!-- Hero Section -->
+        <section class="gradient-bg min-h-screen flex items-center justify-center text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="floating-animation mb-8">
+                    <i class="fas fa-code text-6xl mb-4"></i>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Yonge Lab.</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 fade-in">Creative & Practical Software Developer</p>
+                <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto opacity-80 fade-in">
+                    Crafting innovative solutions with cutting-edge technology and efficient coding practices
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                    <a href="#about" class="bg-white text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-user mr-2"></i>About Me
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-envelope mr-2"></i>Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">
+                        <i class="fas fa-user mr-2"></i>About
+                    </a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">
+                        <i class="fas fa-tools mr-2"></i>Skills
+                    </a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">
+                        <i class="fas fa-envelope mr-2"></i>Contact
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 gradient-text">About Me</h2>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                            <div class="text-center mb-6">
+                                <i class="fas fa-laptop-code text-5xl gradient-text mb-4"></i>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">Software Developer</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                Hello! I'm a passionate software developer at Yonge Lab. I specialize in creating 
+                                practical and innovative software solutions using cutting-edge technologies and 
+                                efficient coding practices. My goal is to build applications that make a real 
+                                difference in people's lives.
+                            </p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="card-hover bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>Innovation
+                                </h4>
+                                <p class="text-gray-600">Always exploring new technologies and creative solutions</p>
+                            </div>
+                            <div class="card-hover bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-500">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                                    <i class="fas fa-cogs text-green-500 mr-2"></i>Efficiency
+                                </h4>
+                                <p class="text-gray-600">Focusing on clean, maintainable, and scalable code</p>
+                            </div>
+                            <div class="card-hover bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                                    <i class="fas fa-users text-purple-500 mr-2"></i>Collaboration
+                                </h4>
+                                <p class="text-gray-600">Working closely with teams to deliver exceptional results</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Programming</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>Dart</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-globe text-4xl text-green-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Web Development</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>React</li>
+                                <li>Spring Boot</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-database text-4xl text-purple-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Database</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>MySQL</li>
+                                <li>Redis</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-tools text-4xl text-orange-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Tools & DevOps</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>Git</li>
+                                <li>Docker</li>
+                                <li>Gradle</li>
+                                <li>Flutter</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-12 gradient-text">Get In Touch</h2>
+                    <p class="text-xl text-gray-700 mb-12">
+                        Ready to collaborate on your next project? Let's create something amazing together!
+                    </p>
+                    <div class="max-w-2xl mx-auto mb-12">
+                        <div class="card-hover bg-white p-12 rounded-2xl shadow-lg">
+                            <i class="fas fa-envelope text-6xl text-blue-500 mb-6"></i>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-4">Email</h3>
+                            <p class="text-xl text-gray-600 mb-8">yong.i@hotmail.com</p>
+                            <a href="mailto:yong.i@hotmail.com" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6 text-center">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Yonge Lab.</h3>
+                    <p class="text-gray-400 mb-6">Creating innovative software solutions</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="mailto:yong.i@hotmail.com" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">&copy; 2024 Yonge Lab. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm mt-2">
+                        <a href="privacy_policy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Korean Version -->
+    <div id="koreanVersion" class="hidden">
+        <!-- Hero Section -->
+        <section class="gradient-bg min-h-screen flex items-center justify-center text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <div class="floating-animation mb-8">
+                    <i class="fas fa-code text-6xl mb-4"></i>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">Yonge Lab.</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 fade-in">창의적이고 실용적인 소프트웨어 개발자</p>
+                <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto opacity-80 fade-in">
+                    최신 기술과 효율적인 코딩을 통해 혁신적이고 실용적인 소프트웨어 솔루션을 만듭니다
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                    <a href="#about" class="bg-white text-gray-800 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-user mr-2"></i>소개
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300 transform hover:scale-105">
+                        <i class="fas fa-envelope mr-2"></i>연락하기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg sticky top-0 z-50">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">
+                        <i class="fas fa-user mr-2"></i>소개
+                    </a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">
+                        <i class="fas fa-tools mr-2"></i>기술
+                    </a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300">
+                        <i class="fas fa-envelope mr-2"></i>연락처
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 gradient-text">소개</h2>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div class="card-hover bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                            <div class="text-center mb-6">
+                                <i class="fas fa-laptop-code text-5xl gradient-text mb-4"></i>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-4">소프트웨어 개발자</h3>
+                            </div>
+                            <p class="text-gray-700 text-lg leading-relaxed">
+                                안녕하세요! 저는 Yonge Lab.에서 활동하는 열정적인 소프트웨어 개발자입니다. 
+                                최신 기술과 효율적인 코딩 관행을 사용하여 실용적이고 혁신적인 소프트웨어 솔루션을 
+                                만드는 것을 전문으로 합니다. 사람들의 삶에 진정한 변화를 가져다주는 애플리케이션을 
+                                구축하는 것이 목표입니다.
+                            </p>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="card-hover bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>혁신
+                                </h4>
+                                <p class="text-gray-600">항상 새로운 기술과 창의적인 솔루션을 탐구합니다</p>
+                            </div>
+                            <div class="card-hover bg-white p-6 rounded-xl shadow-lg border-l-4 border-green-500">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                                    <i class="fas fa-cogs text-green-500 mr-2"></i>효율성
+                                </h4>
+                                <p class="text-gray-600">깔끔하고 유지보수가 가능하며 확장 가능한 코드에 집중합니다</p>
+                            </div>
+                            <div class="card-hover bg-white p-6 rounded-xl shadow-lg border-l-4 border-purple-500">
+                                <h4 class="text-xl font-semibold text-gray-800 mb-2">
+                                    <i class="fas fa-users text-purple-500 mr-2"></i>협업
+                                </h4>
+                                <p class="text-gray-600">팀과 긴밀히 협력하여 탁월한 결과를 제공합니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-12 gradient-text">기술 스택</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">프로그래밍</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>Java</li>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>Dart</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-globe text-4xl text-green-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">웹 개발</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>React</li>
+                                <li>Spring Boot</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-database text-4xl text-purple-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">데이터베이스</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>MySQL</li>
+                                <li>Redis</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <div class="card-hover bg-white p-8 rounded-2xl text-center shadow-lg">
+                            <i class="fas fa-tools text-4xl text-orange-500 mb-4"></i>
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">도구 & DevOps</h3>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>Git</li>
+                                <li>Docker</li>
+                                <li>Gradle</li>
+                                <li>Flutter</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-12 gradient-text">연락처</h2>
+                    <p class="text-xl text-gray-700 mb-12">
+                        다음 프로젝트에서 함께 협업할 준비가 되셨나요? 함께 놀라운 것을 만들어봅시다!
+                    </p>
+                    <div class="max-w-2xl mx-auto mb-12">
+                        <div class="card-hover bg-white p-12 rounded-2xl shadow-lg">
+                            <i class="fas fa-envelope text-6xl text-blue-500 mb-6"></i>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-4">이메일</h3>
+                            <p class="text-xl text-gray-600 mb-8">yong.i@hotmail.com</p>
+                            <a href="mailto:yong.i@hotmail.com" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                                <i class="fas fa-paper-plane mr-2"></i>메시지 보내기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-6 text-center">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Yonge Lab.</h3>
+                    <p class="text-gray-400 mb-6">혁신적인 소프트웨어 솔루션을 만듭니다</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="mailto:yong.i@hotmail.com" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">&copy; 2024 Yonge Lab. All rights reserved.</p>
+                    <p class="text-gray-500 text-sm mt-2">
+                        <a href="privacy_policy.html" class="hover:text-white transition-colors duration-300">개인정보 처리방침</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const koreanVersion = document.getElementById('koreanVersion');
+            const englishVersion = document.getElementById('englishVersion');
+            const langSwitch = document.getElementById('langSwitch');
+            const langText = document.getElementById('langText');
+            
+            if (koreanVersion.classList.contains('hidden')) {
+                // Switch to Korean
+                koreanVersion.classList.remove('hidden');
+                englishVersion.classList.add('hidden');
+                langText.textContent = 'English';
+                document.documentElement.lang = 'ko';
+            } else {
+                // Switch to English
+                koreanVersion.classList.add('hidden');
+                englishVersion.classList.remove('hidden');
+                langText.textContent = '한국어';
+                document.documentElement.lang = 'en';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('backdrop-blur-md', 'bg-white/90');
+            } else {
+                nav.classList.remove('backdrop-blur-md', 'bg-white/90');
+            }
+        });
+    </script>
+</body>
+</html>
